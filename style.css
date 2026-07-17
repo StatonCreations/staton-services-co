@@ -7492,4 +7492,146 @@ width:100%;
 
     background-position:center !important;
 
+}/* ==================================================
+   STATON SERVICES CO.
+   PREMIUM MULTI-BACKGROUND SYSTEM
+================================================== */
+
+
+/* MAIN TRUST / REVIEWS / FAQ AREA */
+.trust-background,
+#testimonials,
+#why-us,
+#faq {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.90)
+    ),
+
+    url("trust-background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+}
+
+
+
+/* SERVICES AREA */
+
+#services {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.80),
+        rgba(0,0,0,.90)
+    ),
+
+    url("background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+
+    border-radius:40px;
+
+}
+
+
+
+/* CONTACT AREA */
+
+#contact {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.78),
+        rgba(0,0,0,.90)
+    ),
+
+    url("contact.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+}
+
+
+
+/* READY TO GET STARTED / FINAL CTA */
+
+#cta {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.90)
+    ),
+
+    url("cta-background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+}
+
+
+
+/* PREMIUM EXTRA SECTION */
+
+#about {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.92)
+    ),
+
+    url("premium-background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+
+    border-radius:40px;
+
+}
+
+
+
+/* KEEP HERO SEPARATE */
+
+.hero {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.85)
+    ),
+
+    url("hero.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
 }
