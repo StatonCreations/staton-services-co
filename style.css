@@ -7814,4 +7814,31 @@ width:100%;
 
     background-repeat:no-repeat !important;
 
+}/* ==========================================
+   READY TO GET STARTED FINAL FIX
+========================================== */
+
+#cta {
+
+    min-height:500px !important;
+
+    position:relative !important;
+
+    overflow:hidden !important;
+
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.75)
+    ),
+    url("ready-background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+    background-repeat:no-repeat !important;
+
 }
