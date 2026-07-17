@@ -6280,4 +6280,282 @@ to {
     pointer-events:none;
 
 
+}/* ==========================================
+   FIX SCREEN GLOW + UPGRADE HOW IT WORKS
+========================================== */
+
+
+/* REMOVE THE GIANT GLOW ESCAPING THE PAGE */
+
+#how-it-works::before,
+#contact::before {
+
+    display:none !important;
+
+}
+
+
+/* KEEP HOW IT WORKS CLEAN */
+
+#how-it-works {
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+
+/* BADASS GLASS PROCESS CARDS */
+
+.how-card {
+
+    position:relative;
+
+    overflow:hidden;
+
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.16),
+    rgba(0,0,0,.85)
+    );
+
+
+    backdrop-filter:blur(18px);
+
+
+    border:
+
+    1px solid rgba(212,175,55,.5);
+
+
+    box-shadow:
+
+    0 25px 70px rgba(0,0,0,.8);
+
+
+    animation:
+
+    floatProcess 5s ease-in-out infinite;
+
+
+}
+
+
+
+/* ALTERNATING ENTRANCE */
+
+.how-card:nth-child(odd) {
+
+    animation:
+
+    slideFromLeft 1.2s ease forwards,
+    floatProcess 5s ease-in-out infinite 1.2s;
+
+}
+
+
+.how-card:nth-child(even) {
+
+    animation:
+
+    slideFromRight 1.2s ease forwards,
+    floatProcess 5s ease-in-out infinite 1.2s;
+
+}
+
+
+
+/* LEFT REVEAL */
+
+@keyframes slideFromLeft {
+
+from {
+
+    opacity:0;
+
+    transform:
+
+    translateX(-120px)
+    rotate(-5deg);
+
+}
+
+
+to {
+
+    opacity:1;
+
+    transform:
+
+    translateX(0)
+    rotate(0);
+
+}
+
+}
+
+
+
+/* RIGHT REVEAL */
+
+@keyframes slideFromRight {
+
+from {
+
+    opacity:0;
+
+    transform:
+
+    translateX(120px)
+    rotate(5deg);
+
+}
+
+
+to {
+
+    opacity:1;
+
+    transform:
+
+    translateX(0)
+    rotate(0);
+
+}
+
+}
+
+
+
+/* FLOATING MOTION */
+
+@keyframes floatProcess {
+
+
+0%,100% {
+
+    translate:0 0;
+
+}
+
+
+50% {
+
+    translate:0 -15px;
+
+}
+
+
+}
+
+
+
+/* GOLD LIGHT SWEEP */
+
+.how-card::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+    left:-150%;
+
+
+    width:80%;
+
+
+    height:100%;
+
+
+    background:
+
+
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,215,0,.45),
+    transparent
+    );
+
+
+    transform:skewX(-25deg);
+
+
+    animation:
+
+    processShine 6s infinite;
+
+
+}
+
+
+
+@keyframes processShine {
+
+
+0% {
+
+    left:-150%;
+
+}
+
+
+40%,100% {
+
+    left:150%;
+
+}
+
+
+}
+
+
+
+/* HOVER POWER */
+
+.how-card:hover {
+
+
+    transform:
+
+    translateY(-20px)
+    scale(1.06);
+
+
+    border-color:#FFD700;
+
+
+    box-shadow:
+
+
+    0 0 70px rgba(255,215,0,.7);
+
+
+}
+
+
+
+/* PREMIUM TITLES */
+
+.how-card h3 {
+
+
+    color:#FFD700;
+
+
+    text-shadow:
+
+    0 0 15px rgba(255,215,0,.4);
+
+
 }
