@@ -7330,4 +7330,166 @@ width:100%;
 
     padding-bottom:70px;
 
+}/* ==========================================
+   FIX ALL TRUST SECTION BACKGROUNDS
+   ONE SINGLE background.png ONLY
+========================================== */
+
+
+/* Remove individual backgrounds */
+
+#testimonials,
+#why-us,
+#faq {
+
+    background: transparent !important;
+
+    background-image: none !important;
+
+    box-shadow: none;
+
+}
+
+
+
+/* Create ONE shared background behind all three */
+
+#testimonials::before {
+
+    content:"";
+
+    position:absolute;
+
+    z-index:-1;
+
+
+    top:-80px;
+
+    bottom:-120px;
+
+
+    left:50%;
+
+    width:100vw;
+
+
+    transform:translateX(-50%);
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.88)
+    ),
+
+    url("background.png");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    border-radius:40px;
+
+
+}
+
+
+
+/* Keep sections transparent */
+
+#testimonials,
+#why-us,
+#faq {
+
+    position:relative;
+
+    overflow:visible;
+
+}
+
+
+
+/* Remove old card backgrounds */
+
+#testimonials .project,
+#why-us .project,
+#faq .project {
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.10),
+        rgba(0,0,0,.75)
+    ) !important;
+
+}/* ==========================================
+   FINAL BACKGROUND CLEANUP
+   KEEP hero.png ONLY ON HERO
+========================================== */
+
+
+/* Remove hero image from everything else */
+
+#testimonials,
+#why-us,
+#faq,
+#cta,
+#contact,
+#about,
+#offer,
+#services,
+#how-it-works {
+
+    background-image: none !important;
+
+}
+
+
+
+/* Put the real secondary background only here */
+
+#testimonials,
+#why-us,
+#faq {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.90)
+    ),
+
+    url("background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+}
+
+
+
+/* Make sure hero keeps hero.png */
+
+.hero {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.85)
+    ),
+
+    url("hero.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
 }
