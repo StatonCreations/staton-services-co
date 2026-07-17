@@ -6853,4 +6853,19 @@ text-shadow:
     translateY(-5px);
 
 
+}/* ==========================================
+   REMOVE HOW IT WORKS SCREEN GLOW
+========================================== */
+
+#how-it-works::after {
+
+    display:none !important;
+
+}
+
+
+#how-it-works {
+
+    overflow:hidden;
+
 }
