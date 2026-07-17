@@ -7634,4 +7634,43 @@ width:100%;
 
     background-position:center !important;
 
+}/* ==========================================
+   FIX BOTTOM LARGE BACKGROUND
+   REMOVE HERO IMAGE
+   USE CTA BACKGROUND
+========================================== */
+
+
+#cta,
+.cta-section,
+.ready-section,
+#ready {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.78),
+        rgba(0,0,0,.90)
+    ),
+
+    url("cta-background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+
+}
+
+
+/* Kill hero image leaking into lower sections */
+
+#testimonials::before,
+#why-us::before,
+#faq::before,
+#cta::before {
+
+    background-image:none !important;
+
 }
