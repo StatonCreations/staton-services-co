@@ -7097,4 +7097,63 @@ text-shadow:
 
 }
 
+}/* ==========================================
+   PREMIUM ALTERNATING INFORMATION CARDS
+========================================== */
+
+
+#testimonials .project,
+#why-us .project,
+#faq .project {
+
+
+    width:60%;
+
+
+}
+
+
+
+/* Alternate cards */
+
+#testimonials .project:nth-of-type(odd),
+#why-us .project:nth-of-type(odd),
+#faq .project:nth-of-type(odd) {
+
+
+    margin-left:auto;
+
+
+}
+
+
+
+#testimonials .project:nth-of-type(even),
+#why-us .project:nth-of-type(even),
+#faq .project:nth-of-type(even) {
+
+
+    margin-right:auto;
+
+
+}
+
+
+
+/* Mobile fix */
+
+@media(max-width:700px){
+
+
+#testimonials .project,
+#why-us .project,
+#faq .project {
+
+
+width:100%;
+
+
+}
+
+
 }
