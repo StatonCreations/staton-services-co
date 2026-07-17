@@ -84,4 +84,25 @@ nav a:hover {
     height: auto;
     display: block;
     margin: 0 auto 20px;
+}a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD700;
+    text-decoration: underline;
+}.project {
+    background-color: #222;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    border: 1px solid #D4AF37;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #D4AF37;
 }
