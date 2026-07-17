@@ -6558,4 +6558,299 @@ to {
     0 0 15px rgba(255,215,0,.4);
 
 
+}/* ==========================================
+   HOW IT WORKS - LIQUID GLASS EXPERIENCE
+========================================== */
+
+
+/* Moving ambient glow behind cards */
+
+#how-it-works {
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+#how-it-works::after {
+
+    content:"";
+
+    position:absolute;
+
+
+    width:500px;
+
+    height:500px;
+
+
+    background:
+
+    radial-gradient(
+    circle,
+    rgba(212,175,55,.25),
+    transparent 70%
+    );
+
+
+    filter:blur(60px);
+
+
+    top:30%;
+
+    left:50%;
+
+
+    transform:translateX(-50%);
+
+
+    animation:
+
+    liquidGlow 8s infinite alternate;
+
+
+    pointer-events:none;
+
+}
+
+
+
+@keyframes liquidGlow {
+
+
+0% {
+
+transform:
+translateX(-60%)
+scale(1);
+
+}
+
+
+100% {
+
+transform:
+translateX(-40%)
+scale(1.4);
+
+}
+
+
+}
+
+
+
+/* Premium card setup */
+
+.how-card {
+
+
+    transform-style:preserve-3d;
+
+
+    perspective:1000px;
+
+
+    animation:
+
+    floatJourney 6s ease-in-out infinite;
+
+
+}
+
+
+
+/* Each card gets a different rhythm */
+
+.how-card:nth-child(2){
+
+    animation-delay:1s;
+
+}
+
+
+.how-card:nth-child(3){
+
+    animation-delay:2s;
+
+}
+
+
+
+/* Floating motion */
+
+@keyframes floatJourney {
+
+
+0%,100% {
+
+    transform:
+
+    translateY(0)
+    rotateX(0deg);
+
+}
+
+
+50% {
+
+    transform:
+
+    translateY(-18px)
+    rotateX(3deg);
+
+}
+
+
+}
+
+
+
+/* Liquid glass reflection */
+
+.how-card::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    inset:-50%;
+
+
+    background:
+
+
+    linear-gradient(
+
+    120deg,
+
+    transparent,
+
+    rgba(255,255,255,.25),
+
+    transparent
+
+    );
+
+
+    transform:
+
+    rotate(25deg)
+    translateX(-100%);
+
+
+
+    transition:.8s;
+
+
+}
+
+
+
+.how-card:hover::before {
+
+
+    transform:
+
+    rotate(25deg)
+    translateX(100%);
+
+
+}
+
+
+
+/* 3D hover */
+
+.how-card:hover {
+
+
+    transform:
+
+    perspective(900px)
+
+    rotateY(8deg)
+
+    translateY(-25px)
+
+    scale(1.06);
+
+
+    box-shadow:
+
+
+    0 0 80px rgba(255,215,0,.6);
+
+
+}
+
+
+
+/* Gold glowing titles */
+
+.how-card h3 {
+
+
+    animation:
+
+    titleGlow 3s infinite alternate;
+
+
+}
+
+
+
+@keyframes titleGlow {
+
+
+from {
+
+text-shadow:
+
+0 0 5px #D4AF37;
+
+}
+
+
+to {
+
+text-shadow:
+
+0 0 25px #FFD700;
+
+}
+
+
+}
+
+
+
+/* Smooth text reveal */
+
+.how-card p {
+
+
+    transition:.5s;
+
+
+}
+
+
+
+.how-card:hover p {
+
+
+    color:white;
+
+
+    transform:
+
+    translateY(-5px);
+
+
 }
