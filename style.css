@@ -5635,4 +5635,437 @@ width:100%;
 }
 
 
+}/* ==========================================
+   PREMIUM CONTACT BACKGROUND IMAGE
+========================================== */
+
+#contact {
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.85)
+    ),
+
+    url("contact.png");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    border-radius:35px;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.5);
+
+
+    box-shadow:
+
+    0 0 60px rgba(212,175,55,.25);
+
+
+    padding:70px 40px;
+
+}/* ==========================================
+   HOW IT WORKS PREMIUM ANIMATION
+========================================== */
+
+
+#how-it-works {
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* Glass cards */
+
+.how-card {
+
+    position:relative;
+
+    width:45%;
+
+    padding:40px;
+
+    margin:60px 0;
+
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.15),
+    rgba(0,0,0,.85)
+    );
+
+
+    backdrop-filter:blur(20px);
+
+
+    border-radius:30px;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.45);
+
+
+    box-shadow:
+
+    0 25px 70px rgba(0,0,0,.8);
+
+
+    overflow:hidden;
+
+
+    opacity:0;
+
+
+    animation:
+
+    cardReveal 1.2s ease forwards,
+    cardFloat 5s ease-in-out infinite;
+
+
+}
+
+
+/* Alternating sides */
+
+.how-card:nth-child(odd){
+
+    animation-name:slideLeft, cardFloat;
+
+}
+
+
+.how-card:nth-child(even){
+
+    margin-left:auto;
+
+    animation-name:slideRight, cardFloat;
+
+}
+
+
+
+/* Left entrance */
+
+@keyframes slideLeft {
+
+from {
+
+    opacity:0;
+
+    transform:
+
+    translateX(-150px)
+    scale(.8);
+
+
+    filter:blur(10px);
+
+}
+
+
+to {
+
+    opacity:1;
+
+    transform:
+
+    translateX(0)
+    scale(1);
+
+
+    filter:blur(0);
+
+}
+
+}
+
+
+
+/* Right entrance */
+
+@keyframes slideRight {
+
+from {
+
+    opacity:0;
+
+    transform:
+
+    translateX(150px)
+    scale(.8);
+
+
+    filter:blur(10px);
+
+}
+
+
+to {
+
+    opacity:1;
+
+    transform:
+
+    translateX(0)
+    scale(1);
+
+
+    filter:blur(0);
+
+}
+
+}
+
+
+
+/* Floating motion */
+
+@keyframes cardFloat {
+
+
+0%,100%{
+
+    translate:0 0;
+
+}
+
+
+50%{
+
+    translate:0 -12px;
+
+}
+
+}
+
+
+
+/* Gold moving shine */
+
+.how-card::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+    left:-120%;
+
+
+    width:70%;
+
+
+    height:100%;
+
+
+    background:
+
+
+    linear-gradient(
+
+    120deg,
+
+    transparent,
+
+    rgba(255,215,0,.35),
+
+    transparent
+
+    );
+
+
+    transform:skewX(-25deg);
+
+
+    animation:
+
+    lightSweep 5s infinite;
+
+
+}
+
+
+
+@keyframes lightSweep {
+
+
+0%{
+
+    left:-120%;
+
+}
+
+
+40%,100%{
+
+    left:140%;
+
+}
+
+
+}
+
+
+
+/* Hover effect */
+
+.how-card:hover {
+
+
+    transform:
+
+    translateY(-20px)
+    scale(1.05);
+
+
+    border-color:#FFD700;
+
+
+    box-shadow:
+
+    0 0 60px rgba(255,215,0,.65);
+
+
+}
+
+
+/* Titles */
+
+.how-card h3 {
+
+
+    color:#FFD700;
+
+
+    font-size:30px;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+
+.how-card {
+
+    width:100%;
+
+}
+
+
+}/* ==========================================
+   SERVICE CARD GOLD LIGHT SWEEP
+========================================== */
+
+
+.project {
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+/* Moving shine */
+
+.project::after {
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+    left:-120%;
+
+
+    width:70%;
+
+
+    height:100%;
+
+
+    background:
+
+
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,215,0,.45),
+    transparent
+    );
+
+
+    transform:skewX(-25deg);
+
+
+    transition:.8s;
+
+
+}
+
+
+
+/* Sweep happens on hover */
+
+.project:hover::after {
+
+
+    left:140%;
+
+
+}
+
+
+
+/* Extra premium hover glow */
+
+.project:hover {
+
+
+    border-color:#FFD700;
+
+
+    box-shadow:
+
+
+    0 0 40px rgba(255,215,0,.5);
+
+
+    transform:
+
+    translateY(-10px)
+    scale(1.03);
+
+
 }
