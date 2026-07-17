@@ -1803,4 +1803,637 @@ background-attachment:fixed;
 
     70px 40px;
 
+}/* =====================================================
+   STATON SERVICES CO.
+   PREMIUM CONTACT + HOW IT WORKS SYSTEM
+===================================================== */
+
+
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+
+#contact {
+
+    position:relative;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:70px 40px;
+
+    border-radius:35px;
+
+}
+
+
+
+/* Animated glowing border */
+
+#contact::before {
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:35px;
+
+    padding:2px;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    transparent,
+    #FFD700,
+    transparent
+    );
+
+
+    animation:
+
+    contactBorder 5s linear infinite;
+
+
+    opacity:.8;
+
+}
+
+
+
+@keyframes contactBorder {
+
+
+0% {
+
+transform:translateX(-100%);
+
+}
+
+
+100% {
+
+transform:translateX(100%);
+
+}
+
+
+}
+
+
+
+/* Contact heading */
+
+#contact h2 {
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+/* Contact text */
+
+
+#contact p {
+
+    max-width:700px;
+
+    margin:20px auto;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+/* Contact buttons container */
+
+#contact a {
+
+
+    position:relative;
+
+
+    z-index:2;
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    min-width:280px;
+
+
+    margin:15px;
+
+
+    padding:20px 35px;
+
+
+    border-radius:25px;
+
+
+    background:
+
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.15),
+    rgba(0,0,0,.8)
+    );
+
+
+    backdrop-filter:
+
+    blur(15px);
+
+
+
+    border:
+
+    1px solid rgba(212,175,55,.5);
+
+
+
+    color:#FFD700;
+
+
+
+    font-size:18px;
+
+
+
+    font-weight:700;
+
+
+
+    box-shadow:
+
+
+    0 20px 50px rgba(0,0,0,.7);
+
+
+
+    overflow:hidden;
+
+
+
+    animation:
+
+    contactFloat 5s ease-in-out infinite;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+/* Floating movement */
+
+
+#contact a:nth-of-type(2){
+
+    animation-delay:1.5s;
+
+}
+
+
+
+@keyframes contactFloat {
+
+
+0%,100% {
+
+transform:translateY(0);
+
+}
+
+
+50% {
+
+transform:translateY(-12px);
+
+}
+
+
+}
+
+
+
+/* Gold light sweep */
+
+
+#contact a::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:-120%;
+
+
+    width:80%;
+
+
+    height:100%;
+
+
+
+    background:
+
+
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,215,0,.45),
+    transparent
+    );
+
+
+
+    transition:.8s;
+
+
+}
+
+
+
+#contact a:hover::after {
+
+
+    left:140%;
+
+
+}
+
+
+
+#contact a:hover {
+
+
+    transform:
+
+    translateY(-15px)
+    scale(1.05);
+
+
+
+    color:white;
+
+
+
+    border-color:#FFD700;
+
+
+
+    box-shadow:
+
+
+    0 0 50px rgba(255,215,0,.7);
+
+
+}
+
+
+
+/* ==========================
+   HOW IT WORKS
+========================== */
+
+
+#how-it-works {
+
+    position:relative;
+
+}
+
+
+
+/* Center path */
+
+
+#how-it-works::before {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    left:50%;
+
+
+    top:130px;
+
+
+    bottom:50px;
+
+
+    width:4px;
+
+
+
+    background:
+
+
+    linear-gradient(
+    transparent,
+    #FFD700,
+    transparent
+    );
+
+
+    box-shadow:
+
+
+    0 0 20px #FFD700;
+
+
+}
+
+
+
+/* Process cards */
+
+
+.how-card {
+
+
+    width:45%;
+
+
+    padding:35px;
+
+
+    margin:55px 0;
+
+
+    position:relative;
+
+
+    border-radius:30px;
+
+
+    background:
+
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.12),
+    rgba(0,0,0,.85)
+    );
+
+
+    border:
+
+    1px solid rgba(212,175,55,.4);
+
+
+
+    box-shadow:
+
+
+    0 25px 60px rgba(0,0,0,.8);
+
+
+
+    backdrop-filter:
+
+    blur(15px);
+
+
+
+    overflow:hidden;
+
+
+
+    animation:
+
+
+    processFloat 6s ease-in-out infinite;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+/* Alternate sides */
+
+
+.how-card:nth-child(even){
+
+    margin-left:auto;
+
+}
+
+
+
+.how-card:nth-child(3){
+
+    animation-delay:1s;
+
+}
+
+
+
+.how-card:nth-child(4){
+
+    animation-delay:2s;
+
+}
+
+
+
+.how-card:nth-child(5){
+
+    animation-delay:3s;
+
+}
+
+
+
+/* Floating */
+
+
+@keyframes processFloat {
+
+
+0%,100% {
+
+transform:translateY(0);
+
+}
+
+
+50% {
+
+transform:translateY(-10px);
+
+}
+
+
+}
+
+
+
+/* Hover glow */
+
+
+.how-card:hover {
+
+
+    transform:
+
+
+    translateY(-15px)
+    scale(1.04);
+
+
+
+    border-color:#FFD700;
+
+
+
+    box-shadow:
+
+
+    0 0 60px rgba(212,175,55,.5);
+
+
+}
+
+
+
+/* Titles */
+
+
+.how-card h3 {
+
+
+    color:#FFD700;
+
+
+    font-size:28px;
+
+
+    letter-spacing:2px;
+
+
+}
+
+
+
+/* Light sweep */
+
+
+.how-card::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:-120%;
+
+
+    width:80%;
+
+
+    height:100%;
+
+
+    background:
+
+
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,215,0,.35),
+    transparent
+    );
+
+
+    transition:.8s;
+
+
+}
+
+
+
+.how-card:hover::after {
+
+
+    left:130%;
+
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:700px){
+
+
+#how-it-works::before {
+
+display:none;
+
+}
+
+
+.how-card {
+
+width:100%;
+
+}
+
+
+#contact a {
+
+width:90%;
+
+}
+
+
 }
