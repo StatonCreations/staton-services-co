@@ -7031,11 +7031,8 @@ text-shadow:
 
 
 }/* ==========================================
-   HOW IT WORKS - ALTERNATING TIMELINE
+   HOW IT WORKS - TRUE ALTERNATING LAYOUT
 ========================================== */
-
-
-/* Container */
 
 #how-it-works {
 
@@ -7043,84 +7040,54 @@ text-shadow:
 
     flex-direction:column;
 
-    position:relative;
-
 }
 
 
-
-/* Cards */
-
-.how-card {
+#how-it-works .how-card {
 
     width:55%;
 
-    margin:50px 0;
-
 }
 
 
+/* First card RIGHT */
 
-/* Start first card on the RIGHT */
-
-.how-card:nth-child(2) {
+#how-it-works .how-card:nth-of-type(1) {
 
     align-self:flex-end;
-
-}
-
-
-
-/* Second card LEFT */
-
-.how-card:nth-child(3) {
-
-    align-self:flex-start;
-
-}
-
-
-
-/* Third card RIGHT */
-
-.how-card:nth-child(4) {
-
-    align-self:flex-end;
-
-}
-
-
-
-/* Add a subtle premium spacing effect */
-
-.how-card:nth-child(2) {
 
     margin-right:5%;
 
 }
 
 
-.how-card:nth-child(3) {
+/* Second card LEFT */
+
+#how-it-works .how-card:nth-of-type(2) {
+
+    align-self:flex-start;
 
     margin-left:5%;
 
 }
 
 
-.how-card:nth-child(4) {
+/* Third card RIGHT */
+
+#how-it-works .how-card:nth-of-type(3) {
+
+    align-self:flex-end;
 
     margin-right:5%;
 
 }
 
 
-
-/* Mobile fix */
+/* Mobile */
 
 @media(max-width:700px){
 
-
-.how-card {
+#how-it-works .how-card {
 
     width:100%;
 
@@ -7129,6 +7096,5 @@ text-shadow:
     margin-right:0;
 
 }
-
 
 }
