@@ -7732,4 +7732,37 @@ width:100%;
 
     0 30px 80px rgba(0,0,0,.8);
 
+}/* ==========================================
+   READY TO GET STARTED BACKGROUND
+========================================== */
+
+#cta {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.90)
+    ),
+
+    url("ready-background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+
+    border-radius:40px;
+
+    border:1px solid rgba(212,175,55,.45);
+
+
+    box-shadow:
+
+    0 30px 90px rgba(0,0,0,.85);
+
+
+    padding:100px 40px;
+
 }
