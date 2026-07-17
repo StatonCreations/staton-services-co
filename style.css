@@ -147,4 +147,10 @@ a:hover {
 .button:hover {
     background-color: #FFD700;
     transform: scale(1.05);
+}.hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.85)
+    );
+    border-bottom: 2px solid #D4AF37;
 }
