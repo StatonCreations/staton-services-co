@@ -7841,4 +7841,16 @@ width:100%;
 
     background-repeat:no-repeat !important;
 
+}#cta {
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.75)
+    ),
+    url("final-cta.png") !important;
+
+    background-size:cover !important;
+    background-position:center !important;
+
 }
