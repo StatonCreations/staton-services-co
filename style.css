@@ -7765,4 +7765,53 @@ width:100%;
 
     padding:100px 40px;
 
+}/* ==========================================
+   FINAL TESTIMONIAL + CTA BACKGROUND FIX
+========================================== */
+
+
+/* WHAT OUR CLIENTS SAY */
+
+#testimonials {
+
+    min-height:500px !important;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.75)
+    ),
+    url("testimonials-background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+    background-repeat:no-repeat !important;
+
+}
+
+
+
+/* READY TO GET STARTED */
+
+#cta {
+
+    min-height:500px !important;
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.55),
+        rgba(0,0,0,.75)
+    ),
+    url("ready-background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+    background-repeat:no-repeat !important;
+
 }
