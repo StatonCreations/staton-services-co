@@ -7200,4 +7200,51 @@ width:100%;
 
     padding:70px 40px;
 
+}/* ==========================================
+   PREMIUM SECONDARY TRUST BACKGROUND
+   Testimonials / FAQ / Trust Sections
+========================================== */
+
+
+#testimonials,
+#why-us,
+#faq,
+#cta {
+
+    position: relative;
+
+    overflow: hidden;
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,0.80),
+        rgba(0,0,0,0.90)
+    ),
+
+    url("trust-background.png");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+
+    background-attachment: fixed;
+
+
+    border-radius: 35px;
+
+
+    border: 1px solid rgba(212,175,55,0.35);
+
+
+    box-shadow:
+
+    0 30px 80px rgba(0,0,0,0.8);
+
+
+    padding: 70px 40px;
+
 }
