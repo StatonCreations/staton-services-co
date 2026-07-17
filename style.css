@@ -301,4 +301,561 @@ nav a:hover::after {
 
     box-shadow:
     0 0 40px rgba(212,175,55,0.35);
+}/* ==================================================
+   STATON SERVICES CO.
+   LUXURY PROFESSIONAL WEBSITE SYSTEM
+================================================== */
+
+
+/* ---------- GLOBAL FOUNDATION ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    margin: 0;
+
+    background:
+    radial-gradient(
+        circle at top,
+        #222 0%,
+        #090909 45%,
+        #030303 100%
+    );
+
+    color: #f2f2f2;
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+}
+
+
+/* ---------- PREMIUM TEXT ---------- */
+
+
+p {
+
+    color:#d5d5d5;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+h1,h2,h3 {
+
+    font-weight:900;
+
+}
+
+
+h2 {
+
+    color:#D4AF37;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+
+
+/* ---------- NAVIGATION ---------- */
+
+
+nav {
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    padding:22px;
+
+    text-align:center;
+
+    background:
+
+    rgba(5,5,5,.75);
+
+
+    backdrop-filter:
+
+    blur(18px);
+
+
+    border-bottom:
+
+    1px solid rgba(212,175,55,.4);
+
+
+    box-shadow:
+
+    0 10px 40px black;
+
+}
+
+
+
+nav a {
+
+    color:#D4AF37;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    margin:0 20px;
+
+    text-decoration:none;
+
+    position:relative;
+
+    transition:.4s;
+
+}
+
+
+
+nav a:hover {
+
+    color:white;
+
+    text-shadow:
+
+    0 0 20px #FFD700;
+
+}
+
+
+
+nav a::after {
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-10px;
+
+    left:50%;
+
+    width:0;
+
+    height:3px;
+
+    background:#FFD700;
+
+    transition:.4s;
+
+    transform:translateX(-50%);
+
+}
+
+
+
+nav a:hover::after {
+
+    width:100%;
+
+}
+
+
+
+/* ---------- HERO ---------- */
+
+
+.hero {
+
+    min-height:650px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    flex-direction:column;
+
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.9)
+    ),
+
+    url("hero.png");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    border-radius:35px;
+
+
+    margin:60px auto;
+
+
+    max-width:1200px;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.5);
+
+
+    box-shadow:
+
+    0 0 80px rgba(212,175,55,.2),
+
+    inset 0 0 60px black;
+
+
+    animation:
+
+    heroEnter 1.5s ease;
+
+}
+
+
+
+.hero h1 {
+
+
+    font-size:
+
+    clamp(50px,8vw,100px);
+
+
+    text-transform:uppercase;
+
+
+    letter-spacing:8px;
+
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #fff3a0,
+    #D4AF37,
+    #fff3a0
+    );
+
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+
+    animation:
+
+    goldPulse 3s infinite alternate;
+
+}
+
+
+
+.hero h2 {
+
+    color:white;
+
+    font-size:
+
+    clamp(25px,4vw,45px);
+
+}
+
+
+
+/* ---------- BUTTONS ---------- */
+
+
+.button {
+
+
+    margin-top:30px;
+
+
+    padding:
+
+    18px 45px;
+
+
+    border-radius:
+
+    50px;
+
+
+    background:
+
+    linear-gradient(
+    135deg,
+    #FFD700,
+    #8b6508
+    );
+
+
+    color:black;
+
+
+    font-weight:900;
+
+
+    text-decoration:none;
+
+
+    box-shadow:
+
+    0 0 30px rgba(255,215,0,.5);
+
+
+    transition:.4s;
+
+}
+
+
+
+.button:hover {
+
+
+    transform:
+
+    translateY(-8px)
+    scale(1.08);
+
+
+    box-shadow:
+
+    0 0 60px rgba(255,215,0,.9);
+
+}
+
+
+
+/* ---------- SECTIONS ---------- */
+
+
+section {
+
+    max-width:1100px;
+
+    margin:90px auto;
+
+    padding:40px;
+
+}
+
+
+
+/* ---------- SERVICE CARDS ---------- */
+
+
+.project {
+
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.08),
+    rgba(0,0,0,.7)
+    );
+
+
+    backdrop-filter:
+
+    blur(12px);
+
+
+    border:
+
+    1px solid rgba(212,175,55,.35);
+
+
+    border-radius:
+
+    25px;
+
+
+    padding:
+
+    35px;
+
+
+    margin:
+
+    25px 0;
+
+
+    box-shadow:
+
+    0 20px 50px black;
+
+
+    transition:.5s;
+
+}
+
+
+
+.project:hover {
+
+
+    transform:
+
+    translateY(-15px);
+
+
+    border-color:#FFD700;
+
+
+    box-shadow:
+
+    0 30px 70px rgba(212,175,55,.25);
+
+}
+
+
+
+/* ---------- CONTACT ---------- */
+
+
+#contact {
+
+
+    background:
+
+    rgba(255,255,255,.04);
+
+
+    border-radius:
+
+    30px;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.3);
+
+}
+
+
+
+#contact a {
+
+
+    color:#FFD700;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+/* ---------- ANIMATIONS ---------- */
+
+
+@keyframes goldPulse {
+
+
+from {
+
+filter:
+
+drop-shadow(
+0 0 5px #D4AF37
+);
+
+}
+
+
+to {
+
+filter:
+
+drop-shadow(
+0 0 30px #FFD700
+);
+
+}
+
+}
+
+
+
+@keyframes heroEnter {
+
+
+from {
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+
+to {
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* ---------- MOBILE ---------- */
+
+
+@media(max-width:700px){
+
+
+nav a {
+
+display:inline-block;
+
+margin:10px;
+
+}
+
+
+.hero {
+
+margin:20px;
+
+}
+
+
+section {
+
+padding:20px;
+
+}
+
+
 }
