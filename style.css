@@ -7030,4 +7030,105 @@ text-shadow:
     0 0 15px rgba(255,215,0,.35);
 
 
+}/* ==========================================
+   HOW IT WORKS - ALTERNATING TIMELINE
+========================================== */
+
+
+/* Container */
+
+#how-it-works {
+
+    display:flex;
+
+    flex-direction:column;
+
+    position:relative;
+
+}
+
+
+
+/* Cards */
+
+.how-card {
+
+    width:55%;
+
+    margin:50px 0;
+
+}
+
+
+
+/* Start first card on the RIGHT */
+
+.how-card:nth-child(2) {
+
+    align-self:flex-end;
+
+}
+
+
+
+/* Second card LEFT */
+
+.how-card:nth-child(3) {
+
+    align-self:flex-start;
+
+}
+
+
+
+/* Third card RIGHT */
+
+.how-card:nth-child(4) {
+
+    align-self:flex-end;
+
+}
+
+
+
+/* Add a subtle premium spacing effect */
+
+.how-card:nth-child(2) {
+
+    margin-right:5%;
+
+}
+
+
+.how-card:nth-child(3) {
+
+    margin-left:5%;
+
+}
+
+
+.how-card:nth-child(4) {
+
+    margin-right:5%;
+
+}
+
+
+
+/* Mobile fix */
+
+@media(max-width:700px){
+
+
+.how-card {
+
+    width:100%;
+
+    margin-left:0;
+
+    margin-right:0;
+
+}
+
+
 }
