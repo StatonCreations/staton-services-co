@@ -1120,4 +1120,325 @@ h3 {
 
 }
 
+}/* ==========================================
+   STATON SERVICES CO.
+   PREMIUM MOTION + TEXT SYSTEM
+========================================== */
+
+
+/* ===== BODY TEXT UPGRADE ===== */
+
+p,
+li {
+
+    color:#c9c9c9;
+
+    font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+    font-size:17px;
+
+    letter-spacing:.5px;
+
+    line-height:1.75;
+
+    text-shadow:
+    0 2px 10px rgba(0,0,0,.8);
+
+    transition:.3s;
+
+}
+
+
+p:hover {
+
+    color:#f2f2f2;
+
+}
+
+
+
+/* ===== MAKE TEXT FEEL PREMIUM ===== */
+
+
+.project p,
+#contact p {
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #cfcfcf,
+    #ffffff,
+    #b8b8b8
+    );
+
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+
+}
+
+
+
+/* ===== SERVICE CARDS FLOAT ===== */
+
+
+.project {
+
+    animation:
+
+    floatingCards 6s ease-in-out infinite;
+
+}
+
+
+
+.project:nth-child(even){
+
+    animation-delay:1.5s;
+
+}
+
+
+
+.project:nth-child(3n){
+
+    animation-delay:3s;
+
+}
+
+
+
+@keyframes floatingCards {
+
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+
+}
+
+
+
+/* ===== HOW IT WORKS STYLE ===== */
+
+
+/* If you add a how it works section with cards */
+
+.how-card {
+
+
+    width:70%;
+
+
+    padding:30px;
+
+
+    margin:30px 0;
+
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.08),
+    rgba(0,0,0,.8)
+    );
+
+
+    border:
+
+    1px solid rgba(212,175,55,.35);
+
+
+    border-radius:25px;
+
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.8);
+
+
+    transition:.5s;
+
+
+}
+
+
+.how-card:nth-child(even){
+
+    margin-left:auto;
+
+}
+
+
+
+.how-card:hover {
+
+
+    transform:
+
+    translateY(-12px)
+    scale(1.03);
+
+
+    border-color:#FFD700;
+
+
+    box-shadow:
+
+    0 0 45px rgba(212,175,55,.35);
+
+
+}
+
+
+
+/* ===== ALL NORMAL TEXT GLOW ===== */
+
+
+body p,
+body li {
+
+
+    animation:
+
+    textFade 1s ease both;
+
+}
+
+
+
+@keyframes textFade {
+
+
+from {
+
+opacity:0;
+
+transform:translateY(10px);
+
+}
+
+
+to {
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+
+/* ===== CONTACT PREMIUM LOOK ===== */
+
+
+#contact {
+
+
+    background:
+
+    linear-gradient(
+    145deg,
+    rgba(255,255,255,.07),
+    rgba(0,0,0,.8)
+    );
+
+
+}
+
+
+
+/* Contact text shine */
+
+#contact p {
+
+
+    color:#e2e2e2;
+
+
+}
+
+
+
+/* ===== GOLD LIGHT SWEEP ===== */
+
+
+h1,h2,h3,
+p,
+a {
+
+
+    position:relative;
+
+}
+
+
+
+.project:hover p {
+
+
+    text-shadow:
+
+    0 0 15px rgba(212,175,55,.25);
+
+
+}
+
+
+
+/* ===== SMOOTH PAGE FEEL ===== */
+
+
+section {
+
+
+    animation:
+
+    sectionEnter .8s ease both;
+
+
+}
+
+
+@keyframes sectionEnter {
+
+
+from {
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+
+to {
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
 }
