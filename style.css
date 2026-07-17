@@ -1441,4 +1441,366 @@ transform:translateY(0);
 }
 
 
+}/* ==========================================
+   STATON SERVICES CO.
+   PREMIUM ANIMATION SYSTEM
+========================================== */
+
+
+/* Smooth entrance for everything */
+
+.hero,
+.project,
+section,
+#contact {
+
+    animation:
+    fadeUp 1s ease both;
+
+}
+
+
+@keyframes fadeUp {
+
+from {
+
+    opacity:0;
+
+    transform:
+    translateY(40px);
+
+}
+
+
+to {
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+}
+
+}
+
+
+
+/* Floating effect */
+
+.project {
+
+    animation:
+    floatCard 6s ease-in-out infinite;
+
+}
+
+
+@keyframes floatCard {
+
+
+0%,100% {
+
+    transform:
+    translateY(0);
+
+}
+
+
+50% {
+
+    transform:
+    translateY(-10px);
+
+}
+
+
+}
+
+
+
+/* Gold shine sweep */
+
+.project {
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+
+.project::after {
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    top:0;
+
+
+    left:-120%;
+
+
+    width:80%;
+
+
+    height:100%;
+
+
+
+    background:
+
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,215,0,.25),
+    transparent
+    );
+
+
+    transform:skewX(-25deg);
+
+
+    transition:.8s;
+
+
+}
+
+
+
+.project:hover::after {
+
+
+    left:140%;
+
+
+}
+
+
+
+/* Button breathing glow */
+
+
+.button {
+
+
+    animation:
+
+    buttonPulse 3s infinite;
+
+
+}
+
+
+
+@keyframes buttonPulse {
+
+
+0%,100% {
+
+
+box-shadow:
+
+0 0 20px rgba(212,175,55,.5);
+
+
+}
+
+
+50% {
+
+
+box-shadow:
+
+0 0 45px rgba(255,215,0,.9);
+
+
+}
+
+
+}
+
+
+
+/* Navigation glow */
+
+nav {
+
+
+    animation:
+
+    navDrop .8s ease;
+
+
+}
+
+
+@keyframes navDrop {
+
+
+from {
+
+transform:
+translateY(-50px);
+
+opacity:0;
+
+}
+
+
+to {
+
+transform:
+translateY(0);
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+/* Title cinematic reveal */
+
+
+.hero h1 {
+
+
+animation:
+
+titleReveal 1.5s ease;
+
+
+}
+
+
+
+@keyframes titleReveal {
+
+
+from {
+
+opacity:0;
+
+letter-spacing:20px;
+
+filter:
+blur(10px);
+
+}
+
+
+to {
+
+opacity:1;
+
+letter-spacing:8px;
+
+filter:
+blur(0);
+
+}
+
+
+}
+
+
+
+/* Links smooth hover */
+
+
+a {
+
+
+transition:
+
+.35s ease;
+
+
+}
+
+
+
+/* Contact section glow */
+
+
+#contact:hover {
+
+
+box-shadow:
+
+0 0 50px rgba(212,175,55,.25);
+
+
+transition:.5s;
+
+
+}
+
+
+
+/* Image depth */
+
+
+.hero {
+
+
+background-attachment:fixed;
+
+
+}/* ==========================================
+   CONTACT BACKGROUND SECTION
+========================================== */
+
+#contact {
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.75)
+    ),
+
+    url("contact.png");
+
+
+    background-size:
+
+    cover;
+
+
+    background-position:
+
+    center;
+
+
+    border-radius:
+
+    30px;
+
+
+    border:
+
+    1px solid rgba(212,175,55,.5);
+
+
+    box-shadow:
+
+    0 0 50px rgba(212,175,55,.25);
+
+
+    padding:
+
+    70px 40px;
+
 }
