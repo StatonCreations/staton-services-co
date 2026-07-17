@@ -283,4 +283,22 @@ nav a:hover::after {
 
     width: 100%;
 
+}.hero {
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("hero.png");
+
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 25px;
+
+    padding: 140px 20px;
+
+    box-shadow:
+    0 0 40px rgba(212,175,55,0.35);
 }
