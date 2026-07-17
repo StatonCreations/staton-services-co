@@ -7247,4 +7247,87 @@ width:100%;
 
     padding: 70px 40px;
 
+}/* ==========================================
+   TESTIMONIALS + WHY US + FAQ BACKGROUND
+   SINGLE LARGE IMAGE AREA
+========================================== */
+
+
+#testimonials,
+#why-us,
+#faq {
+
+    position: relative;
+
+    background: transparent !important;
+
+}
+
+
+/* Create the large shared background area */
+
+#testimonials::before {
+
+    content:"";
+
+    position:absolute;
+
+    top:-50px;
+
+    bottom:-900px;
+
+    left:50%;
+
+    width:100vw;
+
+    transform:translateX(-50%);
+
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.82),
+        rgba(0,0,0,.90)
+    ),
+
+    url("background.png");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    z-index:-1;
+
+
+    border-radius:50px;
+
+
+}
+
+
+/* Make cards float above the photo */
+
+#testimonials .project,
+#why-us .project,
+#faq .project {
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* Remove old section backgrounds */
+
+#testimonials,
+#why-us,
+#faq {
+
+    padding-top:70px;
+
+    padding-bottom:70px;
+
 }
