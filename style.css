@@ -105,4 +105,10 @@ a:hover {
 .project:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 15px #D4AF37;
+}.services-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
 }
