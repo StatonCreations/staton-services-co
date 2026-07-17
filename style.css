@@ -7702,4 +7702,34 @@ width:100%;
 
     0 30px 80px rgba(0,0,0,.8);
 
+}/* ==========================================
+   WHAT OUR CLIENTS SAY BACKGROUND
+========================================== */
+
+#testimonials {
+
+    background:
+
+    linear-gradient(
+        rgba(0,0,0,.80),
+        rgba(0,0,0,.90)
+    ),
+
+    url("clients-background.png") !important;
+
+
+    background-size:cover !important;
+
+    background-position:center !important;
+
+
+    border-radius:40px;
+
+    border:1px solid rgba(212,175,55,.35);
+
+
+    box-shadow:
+
+    0 30px 80px rgba(0,0,0,.8);
+
 }
