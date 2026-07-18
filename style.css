@@ -7853,4 +7853,70 @@ width:100%;
     background-size:cover !important;
     background-position:center !important;
 
+}/* ==========================================
+   CONTACT FORM
+========================================== */
+
+.contact-form {
+    max-width: 700px;
+    margin: 50px auto 0;
+    padding: 35px;
+    background: rgba(20, 20, 20, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.45);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px 18px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(212,175,55,.25);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1rem;
+    transition: .3s ease;
+    box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255,255,255,.65);
+}
+
+.contact-form select {
+    color: #fff;
+}
+
+.contact-form option {
+    background: #111;
+    color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 18px rgba(212,175,55,.35);
+    background: rgba(255,255,255,.08);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 160px;
+}
+
+.contact-form .button {
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
 }
