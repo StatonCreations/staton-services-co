@@ -445,10 +445,13 @@ form.addEventListener("submit", async (e) => {
     };
 
     try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbzaAPQwbL6ShZb-Wmo8gWB8rwGIxElZsiYFNnacO9divi-k5VsfHmjYBnrzy5mZVC1S/exec", {
-            method: "POST",
-            body: JSON.stringify(formData)
-        });
+const response = await fetch("https://script.google.com/macros/s/AKfycbzaAPQwbL6ShZb-Wmo8gWB8rwGIxElZsiYFNnacO9divi-k5VsfHmjYBnrzy5mZVC1S/exec", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+});
 
         if (response.ok) {
             alert("✅ Thank you! Your request has been submitted.");
