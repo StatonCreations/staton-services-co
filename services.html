@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | Staton Services Co.</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ==========================================
+           STATON SERVICES CO. — SERVICES PAGE
+           ========================================== */
+
+        .services-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 25px 100px;
+        }
+
+        .services-hero {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,.55),
+                    rgba(0,0,0,.85)
+                ),
+                url("hero.png");
+
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 35px;
+            border: 1px solid rgba(212,175,55,.5);
+
+            box-shadow:
+                0 0 70px rgba(212,175,55,.2);
+
+            margin: 40px auto 80px;
+            padding: 60px 25px;
+        }
+
+        .services-hero h1 {
+            font-size: clamp(45px, 7vw, 85px);
+            color: #D4AF37;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .services-hero p {
+            max-width: 700px;
+            font-size: 20px;
+            color: #e5e5e5;
+        }
+
+        .service-category {
+            margin: 80px auto;
+        }
+
+        .service-category h2 {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            position: relative;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,.10),
+                    rgba(0,0,0,.75)
+                );
+
+            backdrop-filter: blur(15px);
+
+            border: 1px solid rgba(212,175,55,.35);
+            border-radius: 25px;
+
+            padding: 30px;
+
+            box-shadow:
+                0 20px 50px rgba(0,0,0,.7);
+
+            transition: .4s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: #FFD700;
+
+            box-shadow:
+                0 0 40px rgba(255,215,0,.4);
+        }
+
+        .service-card::after {
+            content: "";
+
+            position: absolute;
+            top: 0;
+            left: -120%;
+
+            width: 70%;
+            height: 100%;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    transparent,
+                    rgba(255,215,0,.25),
+                    transparent
+                );
+
+            transform: skewX(-25deg);
+            transition: .8s;
+        }
+
+        .service-card:hover::after {
+            left: 140%;
+        }
+
+        .service-card h3 {
+            color: #FFD700;
+            font-size: 25px;
+            margin-top: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-card p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-note {
+            color: #D4AF37;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .equipment-box {
+            margin-top: 25px;
+            padding: 20px;
+
+            border-left: 3px solid #D4AF37;
+
+            background: rgba(212,175,55,.06);
+            border-radius: 10px;
+        }
+
+        .coming-soon {
+            margin: 100px auto 50px;
+            padding: 60px 30px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,.65),
+                    rgba(0,0,0,.9)
+                ),
+                url("cta-background.png");
+
+            background-size: cover;
+            background-position: center;
+
+            border-radius: 35px;
+            border: 1px solid rgba(212,175,55,.5);
+
+            box-shadow:
+                0 0 60px rgba(212,175,55,.2);
+        }
+
+        .coming-soon h2 {
+            margin-bottom: 20px;
+        }
+
+        .coming-soon-list {
+            max-width: 700px;
+            margin: 30px auto;
+            text-align: left;
+        }
+
+        .coming-soon-list p {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(212,175,55,.15);
+        }
+
+        .services-footer {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .services-footer p {
+            max-width: 700px;
+            margin: 20px auto;
+        }
+
+        /* Mobile */
+        @media(max-width:700px) {
+
+            .services-page {
+                padding: 20px 15px 70px;
+            }
+
+            .services-hero {
+                margin-top: 20px;
+                min-height: 350px;
+            }
+
+            .services-hero h1 {
+                font-size: 42px;
+                letter-spacing: 3px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-category {
+                margin: 60px auto;
+            }
+
+            .service-card {
+                padding: 25px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     NAVIGATION
+========================================== -->
+
+<nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="services.html">Services</a>
+
+    <a href="index.html#offer">What We Offer</a>
+
+    <a href="index.html#about">About</a>
+
+    <a href="index.html#contact">Contact</a>
+
+</nav>
+
+
+<main class="services-page">
+
+
+<!-- ==========================================
+     SERVICES HERO
+========================================== -->
+
+<section class="services-hero">
+
+    <h1>Our Services</h1>
+
+    <p>
+        Reliable help for your home, property, vehicle,
+        pets, and everyday tasks.
+    </p>
+
+    <a href="index.html#contact" class="button">
+        Request a Service
+    </a>
+
+</section>
+
+
+<!-- ==========================================
+     YARD & PROPERTY
+========================================== -->
+
+<section class="service-category">
+
+    <h2>Yard & Property</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3>Yard Cleanup</h3>
+            <p>
+                General cleanup of leaves, branches,
+                debris, and other yard materials.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Lawn Mowing</h3>
+            <p>
+                Lawn mowing for customers who provide
+                the mower and necessary equipment.
+            </p>
+            <p class="service-note">
+                Customer equipment available.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Weed Removal</h3>
+            <p>
+                Removal of unwanted weeds using
+                appropriate hand tools and equipment.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Weed Trimming</h3>
+            <p>
+                Trimming and maintaining overgrown
+                weeds around appropriate areas.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Garden & Flower-Bed Cleanup</h3>
+            <p>
+                Cleanup and basic maintenance of
+                gardens and flower beds.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Shrub & Bush Trimming</h3>
+            <p>
+                Basic trimming and shaping of shrubs
+                and bushes.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Seasonal Cleanup</h3>
+            <p>
+                General property cleanup to help prepare
+                your yard for changing seasons.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>General Property Cleanup</h3>
+            <p>
+                Cleanup and basic outdoor maintenance
+                around your property.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Moving Items Around Your Property</h3>
+            <p>
+                Help moving appropriate items from one
+                area of your property to another.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     VEHICLE CARE
+========================================== -->
+
+<section class="service-category">
+
+    <h2>Vehicle Care</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3>Vehicle Detailing</h3>
+            <p>
+                Interior cleaning and detailed vehicle
+                care using appropriate cleaning equipment.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Interior Cleaning</h3>
+            <p>
+                Vacuuming, cleaning, and basic interior
+                vehicle care.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Car Washing</h3>
+            <p>
+                Exterior vehicle cleaning where water,
+                location, and local conditions allow.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Exterior Vehicle Care</h3>
+            <p>
+                Basic exterior cleaning and vehicle
+                appearance maintenance.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PRESSURE WASHING
+========================================== -->
+
+<section class="service-category">
+
+    <h2>Pressure Washing</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3>Driveways</h3>
+            <p>
+                Pressure washing of suitable driveway
+                surfaces.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Walkways</h3>
+            <p>
+                Cleaning of appropriate outdoor walkways
+                and hard surfaces.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Patios</h3>
+            <p>
+                Pressure washing for suitable patios
+                and outdoor areas.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Other Suitable Surfaces</h3>
+            <p>
+                Additional pressure-washing jobs may be
+                available depending on the surface and job.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     HOME SERVICES
+========================================== -->
+
+<section class="service-category">
+
+    <h2>Home Services</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3>Window Cleaning</h3>
+            <p>
+                Basic window cleaning using appropriate
+                hand tools and extension equipment.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Light Cleaning</h3>
+            <p>
+                General light cleaning and basic household
+                assistance.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Garage Organization</h3>
+            <p>
+                Help organizing, sorting, and arranging
+                appropriate garage items.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Changing Air Filters</h3>
+            <p>
+                Basic replacement of accessible household
+                air filters.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Hanging Pictures & Mirrors</h3>
+            <p>
+                Help hanging appropriate pictures,
+                decorations, and mirrors.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Basic Household Tasks</h3>
+            <p>
+                General assistance with simple household
+                tasks and projects.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     PET & HOME CARE
+========================================== -->
+
+<section class="service-category">
+
+    <h2>Pet & Home Care</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3>House Sitting</h3>
+            <p>
+                Caring for your home while you are away,
+                including basic property checks.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Pet Sitting</h3>
+            <p>
+                Caring for pets while their owners are
+                away.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Dog Walking</h3>
+            <p>
+                Reliable dog walking and basic pet care.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Property & Animal Care</h3>
+            <p>
+                Basic care for homes, gardens, and animals
+                while owners are away.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CONVENIENCE SERVICES
+========================================== -->
+
+<section class="service-category">
+
+    <h2>Convenience Services</h2>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <h3>Trash Can Placement & Return</h3>
+            <p>
+                Put trash cans out for collection and
+                return them afterward.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Package Pickup & Drop-Off</h3>
+            <p>
+                Assistance with appropriate package
+                pickup and drop-off tasks.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Basic Errands</h3>
+            <p>
+                Assistance with simple local errands
+                when practical.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Odd Jobs & General Assistance</h3>
+            <p>
+                Help with miscellaneous tasks that fit
+                within our available equipment and abilities.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     CUSTOMER EQUIPMENT
+========================================== -->
+
+<section class="service-category">
+
+    <h2>Customer-Equipment Services</h2>
+
+    <div class="service-card">
+
+        <h3>Have the Equipment? We Can Put It to Work.</h3>
+
+        <p>
+            Some jobs require equipment that we may not
+            currently transport ourselves. If you already
+            have the necessary equipment, certain services
+            may still be available.
+        </p>
+
+        <div class="equipment-box">
+
+            <p>
+                Examples may include lawn mowing,
+                certain yard maintenance tasks, and
+                other appropriate equipment-based work.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     COMING SOON
+========================================== -->
+
+<section class="coming-soon">
+
+    <h2>Coming Soon</h2>
+
+    <p>
+        As Staton Services Co. grows, we plan to expand
+        into larger equipment and trailer-dependent work.
+    </p>
+
+    <div class="coming-soon-list">
+
+        <p>• Larger landscaping projects</p>
+
+        <p>• Mulch delivery & spreading</p>
+
+        <p>• Soil delivery</p>
+
+        <p>• Rock & gravel delivery</p>
+
+        <p>• Landscaping material transportation</p>
+
+        <p>• Larger-scale property cleanup</p>
+
+        <p>• Larger mowing operations</p>
+
+        <p>• Larger pressure-washing equipment</p>
+
+        <p>• Equipment transportation & delivery</p>
+
+    </div>
+
+</section>
+
+
+<!-- ==========================================
+     FINAL MESSAGE
+========================================== -->
+
+<section class="services-footer">
+
+    <h2>Need Something Else?</h2>
+
+    <p>
+        Not seeing exactly what you need?
+        Contact Staton Services Co. and tell us what
+        you're looking for. If it is something we can
+        safely and properly handle, we'll be happy to
+        discuss it.
+    </p>
+
+    <a href="index.html#contact" class="button">
+        Let's Get Started
+    </a>
+
+</section>
+
+
+</main>
+
+</body>
+
+</html>
