@@ -385,14 +385,11 @@ Let's Get Started
 
 </div>
 
-<!-- Paste the form here -->
-
 <form
     id="service-form"
     class="contact-form"
-   action="https://script.google.com/macros/s/AKfycby9o6PzbQx-fCX7lKUxStI-4LYsPRCHlfxPaFNuYQjH4zw66NE-CERhSt_Wg_GMk6_H/exec"
-    method="POST"
-    enctype="application/x-www-form-urlencoded">
+    action="https://script.google.com/macros/s/AKfycby9o6PzbQx-fCX7lKUxStI-4LYsPRCHlfxPaFNuYQjH4zw66NE-CERhSt_Wg_GMk6_H/exec"
+    method="POST">
 
     <div class="form-group">
         <input type="text" name="name" placeholder="Full Name" required>
@@ -424,7 +421,7 @@ Let's Get Started
     </div>
 
     <button type="submit" class="button">
-       Let's Get Started
+        Let's Get Started
     </button>
 
 </form>
@@ -438,7 +435,39 @@ Let's Get Started
 </p>
 
 </footer>
+<script src="script.js"></script>
+<script>
+document.getElementById("service-form").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-</body>
+    const form = this;
+    const button = form.querySelector("button[type='submit']");
+
+    button.disabled = true;
+    button.textContent = "Sending...";
+
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        mode: "no-cors"
+    })
+    .then(function() {
+        form.reset();
+
+        button.disabled = false;
+        button.textContent = "Let's Get Started";
+
+        alert("Thank you! Your request has been received.");
+    })
+    .catch(function(error) {
+        console.error(error);
+
+        button.disabled = false;
+        button.textContent = "Let's Get Started";
+
+        alert("Something went wrong. Please call us at (505) 304-4025.");
+    });
+});
+</script></body>
 
 </html>
